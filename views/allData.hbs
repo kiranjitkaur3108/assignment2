@@ -1,0 +1,28 @@
+<h2>{{title}}</h2>
+<p style="font-style:italic; color:gray;">Basic data display from Assignment 1 (no helpers or data cleaning).</p>
+<table border="1" cellpadding="8" cellspacing="0" style="margin:auto; border-collapse:collapse; width:90%;">
+    <thead style="background-color:#003d80; color:white;">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Host Name</th>
+      <th>Neighbourhood</th>
+      <th>Room Type</th>
+      <th>Price</th>
+      <th>Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+      <tr>
+        <td>{{id}}</td>
+        <td>{{emptyName name}}</td>
+        <td>{{host_name}}</td>
+        <td>{{neighbourhood}}</td>
+        <td>{{room_type}}</td>
+        <td>{{price}}</td>
+        <td><img src="{{picture_url}}" alt="{{name}}" width="100"></td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

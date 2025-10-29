@@ -1,0 +1,77 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  /* background-color: #435162; */
+  padding: 12px 0;
+  border-bottom: 2px solid white;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  font-size: 1.05em;
+}
+
+nav a:hover {
+  color: #ffcc00;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 3px;
+}
+
+
+nav a.active {
+  color: #ffcc00;
+  border-bottom: 2px solid #ffcc00;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: #003d80;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+#content {
+  flex: 1;              
+  padding: 30px;
+  text-align: center;
+}
+
+/* Footer*/
+footer {
+  background-color: #003d80;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9em;
+}
+
+/* Step 10: Highlight rows with empty property name */
+.highlight {
+  background-color: #fff3cd; 
+  color: #333;
+  font-weight: bold;
+}
+

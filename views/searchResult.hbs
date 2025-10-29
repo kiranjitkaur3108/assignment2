@@ -1,0 +1,11 @@
+{{#if notFound}}
+  <h3>No property found with that ID.</h3>
+{{else}}
+  <h2>{{result.name}}</h2>
+  <img src="{{result.picture_url}}" alt="{{result.name}}" width="300">
+  <p><strong>ID:</strong> {{result.id}}</p>
+  <p><strong>Host:</strong> {{result.host_name}}</p>
+  <p><strong>Neighbourhood:</strong> {{result.neighbourhood}}</p>
+  <p><strong>Room Type:</strong> {{result.room_type}}</p>
+  <p><strong>Price:</strong> {{result.price}}</p>
+{{/if}}

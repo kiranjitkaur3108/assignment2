@@ -1,0 +1,22 @@
+<h2>Search by Property Name</h2>
+
+<form action="/search/name" method="POST" class="search-form">
+  <label for="property_name">Enter Property Name:</label>
+  <input
+    type="text"
+    id="property_name"
+    name="property_name"
+    placeholder="e.g. Cozy Apartment"
+    required
+  />
+
+  <button type="submit">Search</button>
+</form>
+
+{{#if errors}}
+  <ul class="error-list">
+    {{#each errors}}
+      <li>{{this.msg}}</li>
+    {{/each}}
+  </ul>
+{{/if}}

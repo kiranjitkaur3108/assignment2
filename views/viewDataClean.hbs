@@ -1,0 +1,36 @@
+{{!-- view clean data  --}}
+<h2>{{title}}</h2>
+<table border="1" cellpadding="10" cellspacing="0">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Property Name</th>
+      <th>Host Name</th>
+      <th>Neighbourhood</th>
+      <th>Room Type</th>
+      <th>Price</th>
+      <th>Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+      {{#if name}}
+        <tr>
+          <td>{{id}}</td>
+          <td>{{name}}</td>
+          <td>{{host_name}}</td>
+          <td>{{neighbourhood}}</td>
+          <td>{{room_type}}</td>
+          <td>${{price}}</td>
+          <td>
+            {{#if picture_url}}
+              <img src="{{picture_url}}" alt="{{name}}" width="100">
+            {{else}}
+              No Image
+            {{/if}}
+          </td>
+        </tr>
+      {{/if}}
+    {{/each}}
+  </tbody>
+</table>
