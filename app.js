@@ -59,8 +59,9 @@ app.set("views", path.join(__dirname, "views"));
 // Step 7 Load and Clean Airbnb Dataset
 // Read Airbnb JSON data file
 const rawData = JSON.parse(
-  fs.readFileSync("./data/airbnb_with_photos.json", "utf-8")
+  fs.readFileSync(path.join(__dirname, "data/airbnb_with_photos.json"), "utf-8")
 );
+
 
 // Cleaning the data and make sure price is a number
 const airbnbData = rawData.map((item) => {
